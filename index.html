@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header id="header">
         <div class="search-container">
             <label for="search">
-                <i class="fa fa-search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </label>
             <input type="text" name="search" id="search" class="search" placeholder="Search...">
         </div>
         <div class="profile-container">
-            <!-- notification bell, profile pic, profile name -->
+            <i class="fa-solid fa-bell"></i>
+            <div class="user-profile-img-container-sm">
+                <img class="user-profile-img" src="./img/orange-cat.jpg" alt="user profile image">
+            </div>
+            <div class="profile-name">Mr. Muffin</div>
         </div>
         <div class="welcome-container">
             <!-- profile pic, "Hi there, ", profile name and username -->
+            <div class="user-profile-img-container-big">
+                <img class="user-profile-img" src="./img/orange-cat.jpg" alt="user profile image">
+            </div>
+            <div class="welcome-msg">
+                <div class="greeting">Hi there, </div>
+                <div class="profile-name-username">Mr. Muffin (@DoYouKnowTheMuffinCat)</div>
+            </div>
         </div>
         <div class="action-btns-container">
             <button id="new" class="new">New</button>
@@ -28,7 +39,7 @@
         </div>
     </header>
 
-    <nav id="sidenav" class="sidenav">
+    <nav id="sidenav">
         <h1>Dashboard</h1>
         <ul>
             <li><a href="#">Home</a></li>
@@ -43,7 +54,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="content">
         <div id="projects">
             <h2>Your Projects</h2>
             <div class="project">
@@ -75,23 +86,23 @@
             <h2>Announcements</h2>
             <div class="site-maintenance">
                 <h3>Site Maintenance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
+                <p>Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
             </div>
             <div class="community-share-day">
                 <h3>Community Share Day</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div class="privacy-policy">
                 <h3>Updated Privacy Policy</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
+                <p>Lorem ipsum dolor sit amet consectetur voluptatibus possimus illo ad!</p>
             </div>
         </div>
         <div id="trending">
-            <div class="username"></div>
-            <div class="username"></div>
-            <div class="username"></div>
+            <h2>Trending</h2>
+            <div class="username">@misshoneysweets</div>
+            <div class="username">@kittthekitten</div>
+            <div class="username">@cheddarbrie</div>
         </div>
     </main>
-
 </body>
 </html>
