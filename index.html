@@ -6,14 +6,19 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <div class="search-container">
-            <label for="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input type="text" name="search" id="search" class="search" placeholder="Search...">
+            <form action="#">
+                <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <input type="text" name="search" id="search" class="search">
+            </form>
         </div>
         <div class="profile-container">
             <i class="fa-solid fa-bell"></i>
@@ -84,24 +89,29 @@
         </div>
         <div id="announcements">
             <h2>Announcements</h2>
-            <div class="site-maintenance">
-                <h3>Site Maintenance</h3>
-                <p>Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
-            </div>
-            <div class="community-share-day">
-                <h3>Community Share Day</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="privacy-policy">
-                <h3>Updated Privacy Policy</h3>
-                <p>Lorem ipsum dolor sit amet consectetur voluptatibus possimus illo ad!</p>
+            <div class="announcement-content">
+                <div class="site-maintenance">
+                    <h3>Site Maintenance</h3>
+                    <p>Odio necessitatibus ea, exercitationem soluta reprehenderit voluptatibus possimus illo ad!</p>
+                </div>
+                <div class="community-share-day">
+                    <h3>Community Share Day</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="privacy-policy">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur voluptatibus possimus illo ad!</p>
+                </div>
             </div>
         </div>
         <div id="trending">
             <h2>Trending</h2>
-            <div class="username">@misshoneysweets</div>
-            <div class="username">@kittthekitten</div>
-            <div class="username">@cheddarbrie</div>
+            <div class="trending-content">
+                <div class="username">@MissHoneySweets</div>
+                <div class="username">@KittTheKitten</div>
+                <div class="username">@CheddarBrie</div>
+                <div class="username">@LeoTheLion</div>
+            </div>
         </div>
     </main>
 </body>
