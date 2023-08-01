@@ -94,6 +94,10 @@ header {
     font-size: 1rem;
 }
 
+.orange-cat-photo-credit {
+    font-size: 0.5rem;
+}
+
 .welcome-container, .action-btns-container{
     display: flex;
     align-items: center;
