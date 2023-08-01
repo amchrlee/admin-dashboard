@@ -2,7 +2,7 @@
     font-size: calc(0.625rem + 0.5vw);
     font-family: 'Poppins', 'Montserrat', 'Helvetica Neue', 'Roboto', 'Open Sans', sans-serif;
     --shadow: #8ba0b3;
-    --grey-white: #e0e7f7;
+    --grey-white: #eff4ff;
     --baby-blue: #BFD7ED;
     --blue-grotto: #60A3D9;
     --royal-blue: #0074B7;
@@ -38,12 +38,18 @@ header {
 
 .search-container {
     padding: 0.25rem;
+    /* display: flex; */
+}
+
+.search-container svg {
+    height: 1.35rem;
+    width: 1.35rem;
 }
 
 #search {
     margin: 0 0.5rem;
     padding: 0.3rem;
-    width: 65%;
+    width: 70%;
     background-color: var(--baby-blue);
     border-style: none;
     border-radius: 15px;
@@ -55,6 +61,11 @@ header {
     justify-content: right;
     align-items: center;
     gap: 1rem;
+}
+
+.profile-container svg {
+    height: 1.35rem;
+    width: 1.35rem;
 }
 
 .user-profile-img-container-sm {
@@ -122,25 +133,51 @@ header {
 /* SIDE NAVIGATION BAR */
 
 nav {
+    color: var(--grey-white);
     margin: 0; 
-    padding: 1rem;
+    padding: 0.75rem;
     background-color: var(--navy-blue);
     grid-area: sidebar;
     display: grid;
     grid-template-rows: auto auto 1fr;
 }
 
-.dashboard {
-    display: flex;
-}
-
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--grey-white);
 }
 
-nav > ul {
+svg {
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+
+h1 svg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.sidenav-menu ul {
     list-style-type: none;
+}
+
+li {
+    margin: 0.4rem;
+}
+
+li svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.sidenav-menu > ul > li > a {
+    padding-left: 0.55rem;
+    text-decoration: none;
+    color: var(--grey-white);
+}
+
+.first-menu, .second-menu {
+    padding: 0.75rem;
 }
 
 /* MAIN CONTENT */
@@ -216,6 +253,11 @@ h3 {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+}
+
+.action-icons-container svg {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 #announcements {
